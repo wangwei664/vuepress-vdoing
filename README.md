@@ -13,8 +13,8 @@ $ yarn run dev # 启动本地预览
 # 浏览器访问本地启动的预览地址
 
 # 部署项目到 GitHub Pages
-$ chmod 755 ./deploy.sh # 修改部署脚本执行全县
-$ ./deploy.sh # 执行部署
+$ chmod 755 ./deploy.sh # 修改部署脚本执行权限
+$ yarn run deploy # 执行部署
 ```
 
 ![](./vuepress-vdoing.png)  
