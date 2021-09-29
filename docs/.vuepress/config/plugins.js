@@ -65,32 +65,32 @@ module.exports = [
       },
     },
   ],
-  [
-    'vuepress-plugin-baidu-tongji', // 百度统计
-    {
-      hm: '503f098e7e5b3a5b5d8c5fc2938af002',
-    },
-  ],
   // [
-  //   'vuepress-plugin-comment', // 评论
+  //   'vuepress-plugin-baidu-tongji', // 百度统计
   //   {
-  //     choosen: 'gitalk',
-  //     options: {
-  //       clientID: 'a6e1355287947096b88b',
-  //       clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-  //       repo: 'blog-gitalk-comment', // GitHub 仓库
-  //       owner: 'wangwei664', // GitHub仓库所有者
-  //       admin: ['wangwei664'], // 对仓库有写权限的人
-  //       // distractionFreeMode: true,
-  //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
-  //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-  //       title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-  //       labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-  //       body:
-  //         '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-  //     },
+  //     hm: '503f098e7e5b3a5b5d8c5fc2938af002',
   //   },
   // ],
+  [
+    'vuepress-plugin-comment', // 评论
+    {
+      choosen: 'gitalk',
+      options: {
+        clientID: 'be6a05e6e7cf49e212be',
+        clientSecret: 'c1d181dc1f83cee7a1046d641e4f8ef05160b57b',
+        repo: 'blog-gitalk-comment', // GitHub 仓库
+        owner: 'wangwei664', // GitHub仓库所有者
+        admin: ['wangwei664'], // 对仓库有写权限的人
+        // distractionFreeMode: true,
+        pagerDirection: 'last', // 'first'正序 | 'last'倒序
+        id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+        title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+        labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+        body:
+          '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+      },
+    },
+  ],
   [
     '@vuepress/last-updated', // "上次更新"时间格式
     {
