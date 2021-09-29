@@ -65,12 +65,12 @@ module.exports = [
       },
     },
   ],
-  // [
-  //   'vuepress-plugin-baidu-tongji', // 百度统计
-  //   {
-  //     hm: '503f098e7e5b3a5b5d8c5fc2938af002',
-  //   },
-  // ],
+  [
+    'vuepress-plugin-baidu-tongji', // 百度统计
+    {
+      hm: '7f9029886383b0ab30937bd40bbc0967',
+    },
+  ],
   [
     'vuepress-plugin-comment', // 评论
     {
